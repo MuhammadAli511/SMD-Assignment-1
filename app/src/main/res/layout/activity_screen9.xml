@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screen7"
+    tools:context=".screen9"
     android:orientation="vertical"
     android:background="@color/black"
     android:weightSum="1">
@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.8"
+        android:layout_weight="0.9"
         android:orientation="vertical">
 
         <LinearLayout
@@ -32,7 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Song Title"
+                android:text="Add Playlist"
                 android:textColor="@color/white"
                 android:textSize="28dp"
                 android:textStyle="bold"
@@ -42,50 +42,68 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="By Artist"
-            android:textColor="@color/yellow"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="10dp"
-            android:textSize="20dp">
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:src="@drawable/cloud"
+            android:layout_gravity="center">
 
-        </TextView>
+        </ImageView>
 
         <LinearLayout
+            android:paddingTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp">
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/profile"
-                android:layout_marginLeft="5dp">
-
-            </ImageView>
-
-            <LinearLayout
+            <EditText
+                android:id="@+id/playlist"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/roundedrectangled"
-                android:paddingVertical="16dp"
-                android:layout_marginRight="15dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="What an amazing song"
-                    android:textColor="@color/white"
-                    android:textSize="18dp"
-                    android:layout_marginLeft="20dp">
-
-                </TextView>
-
-            </LinearLayout>
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:background="@drawable/roundedrectangle"
+                android:hint="Playlist Name"
+                android:inputType="text"
+                android:textColorHint="#D4B300">
+            </EditText>
 
         </LinearLayout>
+        <LinearLayout
+            android:paddingTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:background="@drawable/roundedrectangle"
+                android:hint="Description"
+                android:inputType="text"
+                android:textColorHint="#D4B300">
+            </EditText>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="13dp"
+            app:backgroundTint="#DFB300"
+            app:cornerRadius="20dp"
+            android:text="Add Playlist"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_gravity="end"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp">
+
+        </com.google.android.material.button.MaterialButton>
 
 
     </LinearLayout>
@@ -93,52 +111,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.2"
+        android:layout_weight="0.1"
         android:orientation="vertical"
         android:gravity="bottom">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="20dp">
-            <LinearLayout
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/roundedrectangled"
-                android:paddingVertical="16dp"
-                android:layout_marginLeft="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Post a comment"
-                    android:textColor="@color/white"
-                    android:textSize="18dp"
-                    android:layout_marginLeft="20dp">
-
-                </TextView>
-
-            </LinearLayout>
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/sendmsg">
-
-            </ImageView>
-        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="1">
 
             <LinearLayout
-                android:background="#2a2730"
-                android:paddingVertical="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.25"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="#2a2730"
+                android:paddingVertical="8dp">
 
                 <ImageView
                     android:layout_width="55dp"
@@ -158,7 +146,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="#2a2730"
+                android:background="@color/black"
                 android:paddingVertical="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -237,4 +225,5 @@
 
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
