@@ -37,7 +37,8 @@
                 android:text="Listen Later"
                 android:textSize="32dp"
                 android:textColor="@color/white"
-                android:gravity="center">
+                android:gravity="center"
+                android:layout_marginRight="20dp">
             </TextView>
 
 
@@ -109,7 +110,7 @@
                     android:layout_height="match_parent"
                     android:gravity="end">
 
-                    <TextClock
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="3:01"
@@ -119,7 +120,7 @@
                         android:gravity="bottom"
                         android:layout_marginRight="10dp">
 
-                    </TextClock>
+                    </TextView>
 
                     <ImageView
                         android:layout_width="35dp"
@@ -173,7 +174,7 @@
                     android:layout_height="match_parent"
                     android:gravity="end">
 
-                    <TextClock
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="0:24"
@@ -183,7 +184,7 @@
                         android:gravity="bottom"
                         android:layout_marginRight="10dp">
 
-                    </TextClock>
+                    </TextView>
 
                     <ImageView
                         android:layout_width="35dp"

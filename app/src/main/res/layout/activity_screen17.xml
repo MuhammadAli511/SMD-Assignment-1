@@ -103,7 +103,7 @@
 
         </com.google.android.material.slider.Slider>
 
-        <TextClock
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
@@ -111,7 +111,7 @@
             android:textColor="@color/yellow"
             android:textSize="18dp">
 
-        </TextClock>
+        </TextView>
 
 
 

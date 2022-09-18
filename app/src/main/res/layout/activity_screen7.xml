@@ -102,7 +102,7 @@
             android:orientation="horizontal"
             android:layout_marginBottom="20dp">
             <LinearLayout
-                android:layout_width="340dp"
+                android:layout_width="310dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/roundedrectangled"
                 android:paddingVertical="16dp"
@@ -122,10 +122,13 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/sendmsg">
+                android:src="@drawable/sendmsg"
+                android:layout_marginLeft="10dp">
 
             </ImageView>
         </LinearLayout>
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
